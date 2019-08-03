@@ -328,7 +328,7 @@ def create_dataset_for_bert(
         print('TF Record not found')
         make_tfrecord(
             data_dir, create_generator_for_bert,
-            bert_serialize_fn, 'BertFFN', tokenizer=tokenizer, dynamic_padding=True, max_seq_length=max_seq_length)
+            bert_serialize_fn, 'BertFFN', tokenizer=tokenizer, dynamic_padding=False, max_seq_length=max_seq_length)
         tfrecord_file_list = glob(os.path.join(
             data_dir, '*_BertFFN_{0}.tfrecord'.format((mode))))
 
