@@ -361,6 +361,7 @@ def create_dataset_for_bert(
                 bucket_batch_sizes=bucket_batch_sizes,
                 bucket_boundaries=bucket_boundaries
             ))
+        print('>>>>>>>>>> In Dynamic Padding if statement <<<<<<<<<<<<<<<')
     else:
         dataset = dataset.batch(batch_size)
 
