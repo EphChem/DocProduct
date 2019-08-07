@@ -11,7 +11,7 @@ import pandas as pd
 import tensorflow as tf
 from tqdm import tqdm
 
-import gpt2_estimator
+# import gpt2_estimator
 from docproduct.dataset import convert_text_to_feature
 from docproduct.models import MedicalQAModelwithBert
 from docproduct.tokenization import FullTokenizer
