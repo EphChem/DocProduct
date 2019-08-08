@@ -2,7 +2,7 @@ import glob
 import numpy as np
 import os
 import random
-import tensorflow.compat.v1 as tf
+import tensorflow.compat.v2 as tf
 import tqdm
 import csv
 import pandas as pd
