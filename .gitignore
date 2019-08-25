@@ -134,3 +134,7 @@ gpt_2/output.txt
 models/
 qa_embeddings/
 *.code-work*
+
+
+test_pb_file.py
+saved_model.pb
