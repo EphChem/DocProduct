@@ -67,7 +67,7 @@ class MedicalQAModelwithBert(tf.keras.Model):
             residual=True,
             config_file=None,
             checkpoint_file=None,
-            bert_trainable=False,
+            bert_trainable=True,
             layer_ind=-1,
             name=''):
         super(MedicalQAModelwithBert, self).__init__(name=name)
