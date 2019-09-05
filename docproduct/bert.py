@@ -10,8 +10,8 @@ from keras_bert.keras_layer_normalization import LayerNormalization
 from keras_bert.keras_multi_head import MultiHeadAttention
 from keras_bert.keras_position_wise_feed_forward import FeedForward
 
-from dataset import convert_text_to_feature
-from tokenization import FullTokenizer
+from docproduct.dataset import convert_text_to_feature
+from docproduct.tokenization import FullTokenizer
 from collections import defaultdict
 import numpy as np
 
