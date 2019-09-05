@@ -114,7 +114,9 @@ class Bert(keras.Model):
                 name='%s-Norm' % feed_forward_name,
             ))
 
-            vocab_path = "/home/ephrem/Documents/Projects/Health/Health_care_apps/Diagnose_app/DocProduct_cktps/biobert_v1.0_pubmed_pmc/"
+            
+            vocab_path='BioBertFolder/biobert_v1.0_pubmed_pmc/'
+            # vocab_path = "/home/ephrem/Documents/Projects/Health/Health_care_apps/Diagnose_app/DocProduct_cktps/biobert_v1.0_pubmed_pmc/"
             tokenizer = FullTokenizer(os.path.join(vocab_path, 'vocab.txt'))
             question_text = "I am a 34 year old male.  I have been having a rash on my rear buttox for the last 4 years now.  The rash becomes a little red and itches alot.  I use a topical cream which contains Clotrimazole and Betamethasone Dipropionate.  This reduces rash and itching but after 1 or 2 weeks the rash comes back and itching begins again.  What should I do to get rid of this rash?"  #@param {type:"string"}
 
