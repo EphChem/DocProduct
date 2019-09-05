@@ -14,6 +14,7 @@ from docproduct.dataset import convert_text_to_feature
 from docproduct.tokenization import FullTokenizer
 from collections import defaultdict
 import numpy as np
+import os
 
 
 
