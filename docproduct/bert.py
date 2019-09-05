@@ -124,7 +124,7 @@ class Bert(keras.Model):
 
 
             q_feature = convert_text_to_feature(
-                question_text, tokenizer=tokenizer, max_seq_length=max_seq_len)
+                question_text, tokenizer=tokenizer, max_seq_length=256)
             q_feature_dict['q_input_ids'].append(q_feature[0])
             q_feature_dict['q_input_masks'].append(q_feature[1])
             q_feature_dict['q_segment_ids'].append(q_feature[2])
